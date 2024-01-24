@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "appfoundations",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:mpdifran/AppFoundations.git",
+      "state" : {
+        "revision" : "230bcbf685e68c053a3882a2a11d71796ff87666",
+        "version" : "0.1.5"
+      }
+    }
+  ],
+  "version" : 2
+}
