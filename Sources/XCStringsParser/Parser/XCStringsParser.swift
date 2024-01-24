@@ -10,6 +10,8 @@ import Foundation
 public final class XCStringsParser {
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
+
+    public init() { }
 }
 
 public extension XCStringsParser {
