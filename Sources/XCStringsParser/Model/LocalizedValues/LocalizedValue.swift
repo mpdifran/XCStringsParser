@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct LocalizedValue: Codable {
+public struct LocalizedValue: Codable, Equatable {
     public var stringUnit: StringUnit
 
     public init(stringUnit: StringUnit) {

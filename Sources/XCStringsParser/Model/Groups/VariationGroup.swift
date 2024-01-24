@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct VariationGroup: Codable {
+public struct VariationGroup: Codable, Equatable {
     public var device: DeviceVariation
 
     public init(device: DeviceVariation) {

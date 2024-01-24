@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct StringUnit: Codable {
+public struct StringUnit: Codable, Equatable {
     public var state: State
     public var value: String
 
@@ -24,7 +24,7 @@ public struct StringUnit: Codable {
 }
 
 public extension StringUnit {
-    enum State: String, Codable {
+    enum State: String, Codable, Equatable {
         case translated
         case needsReview = "needs_review"
         case unknown

@@ -8,7 +8,7 @@
 import Foundation
 import AppFoundations
 
-public struct LocalizedValueGroup: Codable {
+public struct LocalizedValueGroup: Codable, Equatable {
     public var extractionState: ExtractionState
     public var localizations: [String : LocalizedOptionalValue]
 
@@ -28,7 +28,7 @@ public struct LocalizedValueGroup: Codable {
 }
 
 public extension LocalizedValueGroup {
-    enum ExtractionState: String, Codable {
+    enum ExtractionState: String, Codable, Equatable {
         case manual
         case unknown
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct LocalizedOptionalValue: Codable {
+public struct LocalizedOptionalValue: Codable, Equatable {
     public var stringUnit: StringUnit?
     public var variations: VariationGroup?
 

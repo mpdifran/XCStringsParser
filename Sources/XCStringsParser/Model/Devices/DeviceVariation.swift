@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct DeviceVariation: Codable {
+public struct DeviceVariation: Codable, Equatable {
     public var iphone: LocalizedValue?
     public var ipad: LocalizedValue?
     public var mac: LocalizedValue?

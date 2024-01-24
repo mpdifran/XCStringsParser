@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct XCStringsFile: Codable {
+public struct XCStringsFile: Codable, Equatable {
     public var sourceLanguage: String
     public var strings: [String : LocalizedValueGroup]
     public var version: String
