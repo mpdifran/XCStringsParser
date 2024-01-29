@@ -23,7 +23,7 @@ public struct LocalizedValueGroup: Codable, Equatable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.extractionState = (try? container.decodeIfPresent(LocalizedValueGroup.ExtractionState.self, forKey: .extractionState)) ?? .unknown
-        self.localizations = try container.decode([String : LocalizedOptionalValue].self, forKey: .localizations)
+        self.localizations = (try? container.decode([String : LocalizedOptionalValue].self, forKey: .localizations)) ?? [:]
     }
 }
 

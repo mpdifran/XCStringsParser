@@ -14,6 +14,9 @@ enum DemoXCStringsJSON {
         {
           "sourceLanguage" : "en",
           "strings" : {
+            "" : {
+
+            },
             "TITLE_1" : {
               "extractionState" : "manual",
               "localizations" : {

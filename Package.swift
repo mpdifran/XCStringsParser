@@ -12,7 +12,8 @@ let package = Package(
     products: [
         .library(
             name: "XCStringsParser",
-            targets: ["XCStringsParser"]),
+            targets: ["XCStringsParser"]
+        ),
     ],
     dependencies: [
         .package(url: "git@github.com:mpdifran/AppFoundations.git", from: "0.1.0"),
@@ -20,9 +21,11 @@ let package = Package(
     targets: [
         .target(
             name: "XCStringsParser",
-            dependencies: ["AppFoundations"]),
+            dependencies: ["AppFoundations"]
+        ),
         .testTarget(
             name: "XCStringsParserTests",
-            dependencies: ["XCStringsParser"]),
+            dependencies: ["XCStringsParser"]
+        ),
     ]
 )

@@ -74,7 +74,7 @@ final class XCStringsParserTests: XCTestCase {
     // MARK: Keys
 
     func test_keys_areOrderedCorrectly() {
-        let expectedKeys = ["TITLE_1", "TITLE_2", "TITLE_3"]
+        let expectedKeys = ["", "TITLE_1", "TITLE_2", "TITLE_3"]
         XCTAssertEqual(expectedKeys, sut.keys)
     }
 
