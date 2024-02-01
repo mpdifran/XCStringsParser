@@ -30,8 +30,8 @@ public extension XCStringsFile {
     }
 
     var locales: [String] {
-        let allLocales = strings.values.flatMap({ $0.allLocales }) + [sourceLanguage]
+        let allLocales = strings.values.flatMap({ $0.allLocales }).filter({ $0 != sourceLanguage })
 
-        return allLocales.makingUnique().sorted(by: <)
+        return [sourceLanguage] + allLocales.makingUnique().sorted(by: <)
     }
 }
